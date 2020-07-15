@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Muli", sans-serif;
+    background-color: rgb(214, 153, 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    font-size: 14px;
+}
+
+.box {
+    text-align: center;
+    width: 30%;
+    max-width: 750px;
+    background-color: white;
+    padding: 1.7em;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box .news {
+    width: 400px;
+    max-width: 100%;
+}
+
+.box h2 {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.box p {
+    color: #312940;
+}
+
+.form-style {
+    position: relative;
+    margin: 1em 0 1.2em;
+}
+
+.input {
+    padding: .8em 1em;
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    font-family: inherit;
+    height: 42px;
+    font-size: 14px;
+}
+
+.button {
+    position: absolute;
+    font-family: inherit;
+    right: 0;
+    top: 0;
+    background-color: black;
+    color: #fff;
+    height: 42px;
+    padding: .8em 1em;
+    border-radius: 50px;
+    border: none;
+    /* color: #312940; */
+}
+
+.input:focus, .button:focus {
+    outline: none;
+}
+
+@media(max-width: 564px){
+    .box {
+        width: 80%;
+        max-width: 500px;
+        padding: 1.5em;
+        border-radius: 15px;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .button {
+        /* display: block;
+        margin-top: .5em; */
+    }
+}
